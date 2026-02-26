@@ -41,7 +41,7 @@ type Bindings = {
   FAIRSCALE_ENFORCE_ON_CLAIM?: string;
 };
 
-const DEFAULT_CORS = 'https://instant-grant-core.dev';
+const DEFAULT_CORS = 'https://wene-usdc-receipts.pages.dev';
 
 function addCorsHeaders(response: Response, origin: string): Response {
   const headers = new Headers(response.headers);
@@ -88,7 +88,7 @@ app.all('/metadata/*', forwardToDo);
 // 監査ログは DO 転送の外で処理
 app.route('/', auditRouter);
 
-app.get('/', (c) => c.json({ status: 'ok', service: 'instant-grant-core' }));
+app.get('/', (c) => c.json({ status: 'ok', service: 'wene-usdc-receipts-api' }));
 app.get('/health', (c) => c.json({ ok: true }));
 
 export { SchoolStore };

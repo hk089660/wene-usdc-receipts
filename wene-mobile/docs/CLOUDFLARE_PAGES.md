@@ -16,12 +16,12 @@
 |------|-----|------|
 | `EXPO_PUBLIC_BASE_URL` | `https://<your-pages-domain>` | 末尾スラッシュなし。印刷QRのベースURLになる |
 | `EXPO_PUBLIC_API_MODE` | `mock` または `http` | 本番は `http`（Workers API に接続） |
-| `EXPO_PUBLIC_API_BASE_URL` | `https://instant-grant-core.haruki-kira3.workers.dev` | **http モード時必須**。Cloudflare Workers API のベースURL（末尾スラッシュなし） |
+| `EXPO_PUBLIC_API_BASE_URL` | `https://wene-usdc-receipts-api.haruki-kira3.workers.dev` | **http モード時必須**。Cloudflare Workers API のベースURL（末尾スラッシュなし） |
 
 ### Pages + Workers で運用する場合
 
 - **Pages** の環境変数に上記3つを設定する。
-- **Workers**（`api-worker/`）を別途デプロイし、`https://instant-grant-core.haruki-kira3.workers.dev` を `EXPO_PUBLIC_API_BASE_URL` に指定する。
+- **Workers**（`api-worker/`）を別途デプロイし、`https://wene-usdc-receipts-api.haruki-kira3.workers.dev` を `EXPO_PUBLIC_API_BASE_URL` に指定する。
 - Workers 側で CORS に Pages のドメイン（`EXPO_PUBLIC_BASE_URL`）を許可する（`CORS_ORIGIN` 変数）。
 
 これにより、ローカルサーバなしで Pages 上の UI が Workers API からイベント一覧・claim を取得できる。

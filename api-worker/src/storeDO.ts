@@ -136,7 +136,7 @@ const AUDIT_INTEGRITY_DEFAULT_LIMIT = 50;
 const AUDIT_INTEGRITY_MAX_LIMIT = 200;
 const AUDIT_ENTRY_SCAN_LIMIT = 5000;
 const IMMUTABLE_AUDIT_SOURCE = 'school-store';
-const TOKEN_IMAGE_URL = 'https://instant-grant-core.pages.dev/ticket-token-v2.png';
+const TOKEN_IMAGE_URL = 'https://wene-usdc-receipts.pages.dev/ticket-token-v2.png';
 const MASTER_SEARCH_INDEX_TTL_MS = 30_000;
 const MASTER_SEARCH_SQL_KEEP_KEYS = 5;
 const MASTER_SEARCH_SQL_TERM_DOC_LIMIT = 4000;
@@ -4198,7 +4198,7 @@ export class SchoolStore implements DurableObject {
         symbol,
         description,
         image: TOKEN_IMAGE_URL,
-        external_url: 'https://instant-grant-core.pages.dev/',
+        external_url: 'https://wene-usdc-receipts.pages.dev/',
         attributes: [
           { trait_type: 'mint', value: mint },
           { trait_type: 'event_id', value: linked?.id ?? 'unknown' },

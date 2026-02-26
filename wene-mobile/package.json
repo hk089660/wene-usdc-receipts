@@ -37,8 +37,8 @@
     "dev:web": "npm run web",
     "dev:full": "concurrently \"npm run dev:api\" \"npm run web\"",
     "test:server": "vitest run server/__tests__",
-    "deploy:pages": "sh -c 'npx wrangler pages deploy dist --project-name \"${PAGES_PROJECT_NAME:-instant-grant-core}\"'",
-    "verify:pages": "bash scripts/verify-pages-build.sh \"${PAGES_BASE_URL:-https://instant-grant-core.pages.dev}\""
+    "deploy:pages": "sh -c 'npx wrangler pages deploy dist --project-name \"${PAGES_PROJECT_NAME:-wene-usdc-receipts}\"'",
+    "verify:pages": "bash scripts/verify-pages-build.sh \"${PAGES_BASE_URL:-https://wene-usdc-receipts.pages.dev}\""
   },
   "dependencies": {
     "@coral-xyz/anchor": "^0.32.1",

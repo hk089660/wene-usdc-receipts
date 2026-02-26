@@ -136,7 +136,7 @@ function resolveMetadataBaseUrl(): string {
     return window.location.origin.replace(/\/$/, '');
   }
   if (envBase) return envBase;
-  return 'https://instant-grant-core.haruki-kira3.workers.dev';
+  return 'https://wene-usdc-receipts-api.haruki-kira3.workers.dev';
 }
 
 function isLocalBaseUrl(raw: string): boolean {

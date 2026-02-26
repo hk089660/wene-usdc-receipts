@@ -1,4 +1,4 @@
-name = "instant-grant-core"
+name = "wene-usdc-receipts-api"
 main = "src/index.ts"
 compatibility_date = "2024-11-01"
 
@@ -13,7 +13,7 @@ new_sqlite_classes = ["SchoolStore"]
 # Pages ドメインを CORS に指定する場合はここで変数化（デプロイ時はダッシュボードで設定推奨）
 # [vars]
 [vars]
-CORS_ORIGIN = "https://instant-grant-core.pages.dev"
+CORS_ORIGIN = "https://wene-usdc-receipts.pages.dev"
 AUDIT_IMMUTABLE_MODE = "required"
 AUDIT_IMMUTABLE_FETCH_TIMEOUT_MS = "5000"
 SECURITY_RATE_LIMIT_ENABLED = "true"
@@ -45,10 +45,10 @@ FAIRSCALE_ENFORCE_ON_CLAIM = "true"
 # (or uncomment and fill values here) before production deployment.
 [[r2_buckets]]
 binding = "AUDIT_LOGS"
-bucket_name = "instant-grant-core-audit"
-preview_bucket_name = "instant-grant-core-audit"
+bucket_name = "wene-usdc-receipts-audit"
+preview_bucket_name = "wene-usdc-receipts-audit"
 
 [[kv_namespaces]]
 binding = "AUDIT_INDEX"
-id = "2d73e1e5818447f8b965958831469901"
-preview_id = "2d73e1e5818447f8b965958831469901"
+id = "cb82485643b24e4fbeb1a2531a66d473"
+preview_id = "8b8c38a6652a45c8a5240c461fbadbc8"

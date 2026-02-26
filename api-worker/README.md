@@ -108,7 +108,7 @@ npm i
 npx wrangler deploy
 ```
 
-デプロイ後に表示される URL（正規: `https://instant-grant-core.haruki-kira3.workers.dev`）を、Pages の環境変数 `EXPO_PUBLIC_API_BASE_URL` に設定する。
+デプロイ後に表示される URL（正規: `https://wene-usdc-receipts-api.haruki-kira3.workers.dev`）を、Pages の環境変数 `EXPO_PUBLIC_API_BASE_URL` に設定する。
 
 ### PoP（Proof of Process）署名設定（必須）
 
@@ -169,7 +169,7 @@ FairScale 互換のリスク判定 API を登録/参加導線に組み込める:
 この Worker は次の優先順で CORS を判定する。
 
 1. リクエスト `Origin` が `*.pages.dev` または `localhost` の場合は、その `Origin` をそのまま許可
-2. それ以外は `CORS_ORIGIN` を使用（未設定時は `https://instant-grant-core.dev`）
+2. それ以外は `CORS_ORIGIN` を使用（未設定時は `https://wene-usdc-receipts.pages.dev`）
 
 `CORS_ORIGIN` を明示したい場合:
 
